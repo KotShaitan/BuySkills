@@ -264,6 +264,15 @@ input[type="login"] {
 
 
 /* This is UserProfile */
+.topprofile{
+    background-color: rgb(36, 32, 32);
+    color: white;
+    font-size: larger;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
 
 .leftprofile {
     background-color: rgb(42, 40, 40);
@@ -273,7 +282,6 @@ input[type="login"] {
     font-size: 36px;
     justify-content: center;
     padding-right: 20px;
-    flex-direction: column;
 }
 
 .profileputton {
@@ -287,9 +295,12 @@ input[type="login"] {
     display: flex;
     padding-left: 20px;
     padding-bottom: 10px;
+    justify-self: center;
+    font-size: 25px;
 }
 
 .avatarprofile{
+    display: flex;
     width: 150px;
     height: 150px;
     background-color: white;
@@ -300,6 +311,13 @@ input[type="login"] {
     width: 150px;
     height: 150px;
     border-radius: 50%; 
+}
+.avatarphotomain{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 40px;
 }
 
 .obomne{
@@ -321,24 +339,26 @@ input[type="login"] {
 .midprofileplus{
     display: flex;
     height: 280px;
-    width: 500px;
+    max-width: 500px;
     background-color:rgb(42, 40, 40);
     margin-top: 25px;
     justify-content: center;
     align-items: center;
     margin-right: 150px;
+    flex-shrink: 1;
 }
 
 .midprofile{
     display: flex;
     height: 280px;
-    width: 500px;
+    max-width: 500px;
     background-color:rgb(42, 40, 40);
     margin-top: 25px;
     justify-content: center;
     margin-right: 150px;
     color: white;
     flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .midartprofile{
