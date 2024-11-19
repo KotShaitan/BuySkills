@@ -318,7 +318,7 @@ input[type="login"] {
     margin-right: 100px;
 }
 
-.midprofile{
+.midprofileplus{
     display: flex;
     height: 280px;
     width: 500px;
@@ -327,6 +327,26 @@ input[type="login"] {
     justify-content: center;
     align-items: center;
     margin-right: 150px;
+}
+
+.midprofile{
+    display: flex;
+    height: 280px;
+    width: 500px;
+    background-color:rgb(42, 40, 40);
+    margin-top: 25px;
+    justify-content: center;
+    margin-right: 150px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.midartprofile{
+    display: flex;
+    height: 40%;
+    width: 90%;
+    background-color:rgb(42, 40, 40);
+    margin-top: 20px;
 }
 
 /*Krest art */
