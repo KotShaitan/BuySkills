@@ -294,7 +294,7 @@ input[type="login"] {
     height: 150px;
     background-color: white;
     border-radius: 50%;
-    margin-top: 30px;  
+    margin-top: 25px;  
 }
 .avatarphoto{
     width: 150px;
@@ -303,9 +303,9 @@ input[type="login"] {
 }
 
 .obomne{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 350px;
-    height: 350px;
+    height: 320px;
     background-color: rgb(42, 40, 40);
     border-radius: 10px;
 }
@@ -401,4 +401,11 @@ input[type="login"] {
 
 .regprofile:hover {
     background-color: #d2d2d2;
+}
+
+.nickname{
+    color: white;
+    padding-top: 5px;
+    font-size: 30px;
+
 }
