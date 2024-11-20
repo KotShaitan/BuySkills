@@ -13,10 +13,15 @@
 <body class="body">
     <div class="topprofile">
         <div class="finger-paint-regular">FlowPost</div>
-        <div>
-            <img src="pudge.png" class="avatarphotomain">
+        <div class="avatar-container">
+            <img src="pudge.png" class="avatarphotomain" id="profile-avatar" onclick="toggleDropdown()">
+            <div class="profile-dropdown" id="dropdown-menu">
+                <p class="dropdown-item" onclick="window.location.href='userprofile.html'">NickName</p>
+                <p class="dropdown-item">Настройки</p>
+            </div>
         </div>
     </div>
+    
 
     <div class="flex-con">
 
@@ -58,5 +63,6 @@
 
 
     </div>
+    <script src="vidget.js"></script>
 </body>
 </html>
