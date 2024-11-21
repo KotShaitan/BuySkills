@@ -172,6 +172,16 @@ input[type="text"] {
     justify-content: center;
     margin: 100px 0 0 0;
 }
+
+.finger-paint-regularprofile{
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 60px;
+    margin-right: 30px;
+    color: white;  
+}
+
 .form-container {
     display: flex;
     justify-content: center;
@@ -274,14 +284,35 @@ input[type="login"] {
     justify-content: space-between;    
 }
 
+.bodyprofile {
+    background-color: rgb(97, 97, 97);
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+}
+
 .leftprofile {
     background-color: rgb(42, 40, 40);
-    min-width: 170px;
-    height:86.5vh;
+    width: 250px;
+    height: 100vh; 
     color: rgb(255, 255, 255);
-    font-size: 36px;
-    justify-content: center;
-    padding-right: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.leftprofile h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .profileputton {
@@ -289,14 +320,24 @@ input[type="login"] {
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
-    display: flex;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    justify-self: center;
-    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.regprofileexit{
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+    border-radius: 25px;
+    margin-top: auto;
+    cursor: pointer;
+    text-align: center;
+    width: 50%; 
+    margin-bottom: 100px;
 }
 
 .avatarprofile{
@@ -320,13 +361,31 @@ input[type="login"] {
     margin-right: 40px;
 }
 
-.obomne{
+.obomne {
     margin-top: 10px;
     width: 350px;
     height: 320px;
     background-color: rgb(42, 40, 40);
     border-radius: 10px;
+    overflow-y: auto; 
+    word-wrap: break-word; 
+    padding: 10px; 
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: justify; 
+    box-sizing: border-box; 
 }
+
+
+
+#description-edit {
+    background-color: rgb(42, 40, 40);
+    color: white;
+    border: 1px solid rgb(97, 97, 97);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .rightprofile{
     display: flex;
@@ -367,6 +426,16 @@ input[type="login"] {
     width: 90%;
     background-color:rgb(42, 40, 40);
     margin-top: 20px;
+}
+
+.midikonprofile{
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color:rgb(42, 40, 40);
+    margin-left: 475px;
+    margin-top: 0;
 }
 
 /*Krest art */
@@ -423,22 +492,6 @@ input[type="login"] {
     background-color: #d2d2d2;
 }
 
-.regprofileexit {
-    display: flex;
-    background-color: rgb(42, 40, 40);
-    height: 50px;
-    color: white;
-    font-size: 32px;
-    margin-top: 25px;
-    border-radius: 10px;
-    margin-left: 70px;
-    margin-top: 350px;
-}
-
-.regprofileexit:hover{
-    background-color: #d2d2d2;
-}
-
 .nickname{
     color: white;
     padding-top: 5px;
@@ -470,7 +523,8 @@ input[type="login"] {
 }
 
 .profile-dropdown .dropdown-item {
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-top: 5px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -488,4 +542,112 @@ input[type="login"] {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* Vidget ikon */
+.confirm-widget {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirm-widget-content {
+    background-color: rgb(42, 40, 40);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 300px;
+}
+
+.confirm-widget-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-button {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-button:hover {
+    background-color: rgb(132, 132, 132);
+}
+
+
+/* Other profiles */
+
+.otherregprofileexit{
+    background-color: rgb(42, 40, 40);
+    color: rgb(42, 40, 40);
+    font-size: 24px;
+    border-radius: 25px;
+    margin-top: auto;
+    width: 50%; 
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+
+.leftotherprofile {
+    background-color: rgb(42, 40, 40);
+    width: 250px;
+    height: 100vh; 
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.left-column {
+    padding: 20px; 
+    margin-right: 10px;
+}
+
+.left-column p, .left-column h2 {
+    margin-bottom: 15px;
+}
+
+
+
+.leftotherprofile h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.profileotherputton {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
